@@ -18,9 +18,9 @@ class Scoreboard():
         self.prep_score()
         self.prep_high_score()
         self.prep_level()
-        self.prep_ship()
+        self.prep_ships()
 
-    def prep_ship(self):
+    def prep_ships(self):
         self.ships = Group()
         for ship_number in range(self.stats.ships_left):
             ship = Ship(self.ai_settings,self.screen)
